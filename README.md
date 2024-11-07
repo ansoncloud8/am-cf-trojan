@@ -7,10 +7,15 @@
 </br>✅**解锁更多技术请点击进入 YouTube频道[【@AM_CLUB】](https://youtube.com/@AM_CLUB) 、[【个人博客】](https://am.809098.xyz)** 、TG群[【AM科技 | 分享交流群】](https://t.me/AM_CLUBS) 、获取免费节点[【进群发送关键字: 订阅】](https://t.me/AM_CLUBS)
 
 # Cloudflare Workers 和 Pages 生成Trojan节点,实现订阅连接可以一键订阅节点
-- Trojan免费节点部署视频教程：[点击进入观看](https://youtu.be/uh27CVVi6HA) 
 - VLESS免费节点部署视频教程：[点击进入观看](https://youtu.be/dPH63nITA0M) 
-- 优选IP和优选反代IP视频教程：[点击进入观看](https://youtu.be/pKrlfRRB0gU) 
+- Trojan免费节点部署视频教程：[点击进入观看](https://youtu.be/uh27CVVi6HA) 
+- 优选IP和优选反代IP视频教程：[点击进入观看](https://youtu.be/pKrlfRRB0gU)
+- GitHub私有库存储优选IP文：[点击进入观看](https://youtu.be/vX3U3FuuTT8)
+- CF免费KV存储优选IP文件：[点击进入观看](https://youtu.be/dzxezRV1v-o)
 - 聚合节点订阅视频教程：[点击进入观看](https://youtu.be/YBO2hf96150)
+- 免费域名视频教程：[点击进入观看](https://www.youtube.com/playlist?list=PLGVQi7TjHKXZGODTvB8DEervrmHANQ1AR)
+- 解决常见订阅测试-1：[点击进入观看](https://youtu.be/kYQxV1G-ePw)
+- 获取CF自家域名无限节点：[点击进入观看](https://youtu.be/novrPiMsK70)
 
 ## Workers 部署方法 [视频教程](https://www.youtube.com/watch?v=uh27CVVi6HA&t=31s)
 
@@ -161,11 +166,11 @@
 | 变量名 | 示例 | 必填 | 备注 | YT |
 |-----|-----|-----|-----|-----|
 | PASSWORD         | auto                                 |✅| 节点的密码，可以取任意值                                       |  |
-| PROXYIP          | cdn-b100.xn--b6gac.eu.org            |❌| 访问CloudFlare的CDN代理节点(支持多ProxyIP, ProxyIP之间使用`,`或 换行 作间隔),支持端口设置默认443 如: cdn-b100.xn--b6gac.eu.org:8443 | [Video](https://youtu.be/pKrlfRRB0gU) |
+| PROXYIP          | cdn-b100.xn--b6gac.eu.org            |❌| 访问CloudFlare的CDN代理节点(支持多ProxyIP, ProxyIP之间使用`,`或 换行 作间隔),支持端口设置默认443 如: cdn-b100.xn--b6gac.eu.org:2053 支持远程txt和csv文件 | [Video](https://youtu.be/pKrlfRRB0gU) |
 | SOCKS5           | user:password@127.0.0.1:1080         |❌| 优先作为访问CFCDN站点的SOCKS5代理                                                   | [Video](https://youtu.be/Bw82BH_ecC4) |
 | DNS_RESOLVER_URL | https://cloudflare-dns.com/dns-query |❌| DNS解析获取作用，小白勿用                                                           |  |
 | IP_LOCAL         | `icook.hk:2053#官方优选域名`           |❌| 本地优选域名/优选IP(支持多元素之间`,`或 换行 作间隔)                                 | |
-| IP_URL_TXT       | [https://raw.github.../ipv4.txt](https://raw.githubusercontent.com/amclubs/am-cf-tunnel/main/ipv4.txt) |❌| 优选ipv4、ipv6、域名、API地址(支持多个之间`,`或 换行 作间隔) |[Video](https://youtu.be/dzxezRV1v-o) |
+| IP_URL_TXT       | [https://raw.github.../ipv4.txt](https://raw.githubusercontent.com/amclubs/am-cf-tunnel/main/ipv4.txt) |❌| 优选ipv4、ipv6、域名、API地址(支持多个之间`,`或 换行 作间隔) |[Video](https://youtu.be/dzxezRV1v-o) [Video](https://youtu.be/vX3U3FuuTT8)|
 | IP_URL_CSV       | [https://raw.github.../ipv4.csv](https://raw.githubusercontent.com/amclubs/am-cf-tunnel/main/ipv4.csv) |❌| 优选ipv4/6的IP测速结果(支持多元素, 元素之间使用`,`作间隔) |[Video](https://youtu.be/vX3U3FuuTT8)|
 | NO_TLS           | true/false                           |❌| 默认false,是否开启TLS系列端口，只有workers部署才可以使非用TLS系列端口             | |
 | SL               | 5                                    |❌| `CSV`文件里的测速结果满足速度下限                                                     ||
